@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/zenith_dakhla/precache-manifest.14ac5a6f0fcb29b9bba1345efd7c3e3a.js"
+  "/zenith_dakhla/precache-manifest.9816f000ad535ca9eec9b053197b71b7.js"
 );
 
 workbox.clientsClaim();
