@@ -1,16 +1,13 @@
 {
-  "main.css": "/zenith_dakhla/static/css/main.0cb5ffdd.chunk.css",
-  "main.js": "/zenith_dakhla/static/js/main.5eda63cb.chunk.js",
-  "main.js.map": "/zenith_dakhla/static/js/main.5eda63cb.chunk.js.map",
-  "zenith_dakhla/static/js/1.5d09c73f.chunk.js": "/zenith_dakhla/static/js/1.5d09c73f.chunk.js",
-  "zenith_dakhla/static/js/1.5d09c73f.chunk.js.map": "/zenith_dakhla/static/js/1.5d09c73f.chunk.js.map",
-  "runtime~main.js": "/zenith_dakhla/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/zenith_dakhla/static/js/runtime~main.229c360f.js.map",
-  "zenith_dakhla/static/media/zenith_big_logo.png": "/zenith_dakhla/static/media/zenith_big_logo.f4d06fb1.png",
-  "zenith_dakhla/static/media/font-awesome.min.css": "/zenith_dakhla/static/media/fontawesome-webfont.912ec66d.svg",
-  "zenith_dakhla/static/media/zenith_small.png": "/zenith_dakhla/static/media/zenith_small.5bc506e7.png",
-  "zenith_dakhla/static/css/main.0cb5ffdd.chunk.css.map": "/zenith_dakhla/static/css/main.0cb5ffdd.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.4144f0ffb265373c0c90565b12223b5a.js": "/precache-manifest.4144f0ffb265373c0c90565b12223b5a.js",
-  "service-worker.js": "/service-worker.js"
+  "main.js": "/zenith_dakhla/static/js/main.2f2d0895.chunk.js",
+  "main.js.map": "/zenith_dakhla/static/js/main.2f2d0895.chunk.js.map",
+  "static/js/1.b28ca23b.chunk.js": "/zenith_dakhla/static/js/1.b28ca23b.chunk.js",
+  "static/js/1.b28ca23b.chunk.js.map": "/zenith_dakhla/static/js/1.b28ca23b.chunk.js.map",
+  "runtime~main.js": "/zenith_dakhla/static/js/runtime~main.2062eb38.js",
+  "runtime~main.js.map": "/zenith_dakhla/static/js/runtime~main.2062eb38.js.map",
+  "static/media/zenith_big_logo.png": "/zenith_dakhla/static/media/zenith_big_logo.f4d06fb1.png",
+  "static/media/zenith_small.png": "/zenith_dakhla/static/media/zenith_small.5bc506e7.png",
+  "index.html": "/zenith_dakhla/index.html",
+  "precache-manifest.14ac5a6f0fcb29b9bba1345efd7c3e3a.js": "/zenith_dakhla/precache-manifest.14ac5a6f0fcb29b9bba1345efd7c3e3a.js",
+  "service-worker.js": "/zenith_dakhla/service-worker.js"
 }
