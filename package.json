@@ -57,8 +57,10 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
+    "start:prod": "node server.js",
     "build": "node scripts/build.js",
     "deploy": "gh-pages -d build",
+    "deploy:aws": "aws s3 cp build s3://zenithdakhla.com --recursive",
     "test": "node scripts/test.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -125,6 +127,5 @@
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "storybook": "^1.0.0"
-  },
-  "homepage": "http://fsdevlondon.github.io/zenith_dakhla"
+  }
 }

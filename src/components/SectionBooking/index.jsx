@@ -1,5 +1,7 @@
 import React from 'react';
-//import {  } from './wrappers';
+import Spherical0297 from '../../assets/img/Spherical-Urbanica-0297.jpg';
+import Spherical0298 from '../../assets/img/Spherical-Urbanica-Hotels-Meridian-South-Beach_pool-cabana_01.jpg';
+import Spherical0299 from '../../assets/img/Spherical-Urbanica-Hotels-Meridian-South-Beach_Front-Desk_01B.jpg';
 
 const SectionBoking = () => (
   <div className="content-images-booking">
@@ -22,9 +24,7 @@ const SectionBoking = () => (
           </div>
 
           <div className="booking-widget__wrap">
-            <form className="booking-widget__form" action="https://be.synxis.com/?" method="GET">
-              <input type="hidden" name="Hotel" value="5108"/>
-              <input type="hidden" name="Chain" value="24140"/>
+            <form className="booking-widget__form">
               <input type="hidden" id="inline_reserve_arrive" name="arrive"/>
               <input type="hidden" id="inline_reserve_depart" name="depart"/>
             </form>
@@ -34,9 +34,7 @@ const SectionBoking = () => (
       </div>
 
       <div className="content-images-booking__btn mobile">
-        <form className="booking-widget__form" action="https://be.synxis.com/" method="GET">
-          <input type="hidden" name="Hotel" value="5108"/>
-          <input type="hidden" name="Chain" value="24140"/>
+        <form className="booking-widget__form" >
           <input type="hidden" id="inline_reserve_arrive" name="arrive"/>
           <input type="hidden" id="inline_reserve_depart" name="depart"/>
           <input id="book_locale" type="hidden" name="locale" value="en-US"/>
@@ -49,28 +47,28 @@ const SectionBoking = () => (
     <div className="content-images-booking__img-block">
       <div className="content-images-booking__img-1 fadein-slideready fadein-slideup">
         <img className="img-desktop"
-             src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0297.jpg"
-             alt="spherical-urbanica-0297" />
+             src={Spherical0297}
+             alt="spherical-0297" />
         <img className="img-mobile"
-             src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0297.jpg"
-             alt="spherical-urbanica-0297" />
+             src={Spherical0297}
+             alt="spherical-0297" />
       </div>
 
       <div className="content-images-booking__img-2 fadein-slideready fadein-slideup">
         <img className="img-desktop"
-             src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-Hotels-Meridian-South-Beach_pool-cabana_01.jpg"
-             alt="spherical-urbanica-hotels-meridian-south-beach_pool-cabana_01" />
+             src={Spherical0298}
+             alt="spherical" />
         <img className="img-mobile"
-             src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-Hotels-Meridian-South-Beach_pool-cabana_01.jpg"
-             alt="spherical-urbanica-hotels-meridian-south-beach_pool-cabana_01" />
+             src={Spherical0298}
+             alt="spherical" />
       </div>
 
       <div className="content-images-booking__img-3 fadein-slideready">
         <img className="img-desktop"
-             src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-Hotels-Meridian-South-Beach_Front-Desk_01B.jpg"
+             src={Spherical0299}
              alt="spherical-urbanica-hotels-meridian-south-beach_front-desk_01b" />
         <img className="img-mobile"
-             src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-Hotels-Meridian-South-Beach_Front-Desk_01B.jpg"
+             src={Spherical0299}
              alt="spherical-urbanica-hotels-meridian-south-beach_front-desk_01b" />
       </div>
 

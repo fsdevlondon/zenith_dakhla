@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/zenith_big_logo.png';
 
 class Footer extends Component {
@@ -14,16 +15,24 @@ class Footer extends Component {
 
   sendSignupForm = () => {
     const { newsletter_fullname, newsletter_email } = this.state;
-    const url = 'https://script.google.com/macros/s/AKfycbzjWRtA2shub150D7ZfdfsuBxALCL1nSu1fTkIInHM61gBGo4El/exec';
-    fetch(url, {
-      method: 'POST',
-      mode: 'cors',
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ newsletter_fullname, newsletter_email })
-    }).then(console.log).catch(console.log)
+
+    if (newsletter_fullname && newsletter_email) {
+      const url = 'https://script.google.com/macros/s/AKfycbzjWRtA2shub150D7ZfdfsuBxALCL1nSu1fTkIInHM61gBGo4El/exec';
+      const urlWithParams = `${url}?newsletter_fullname=${encodeURIComponent(newsletter_fullname)}&newsletter_email=${encodeURIComponent(newsletter_email)}`;
+      fetch(urlWithParams, {
+        method: 'GET',
+        mode: 'no-cors',
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json'
+        }
+      }).then(() => {
+        this.setState({
+          newsletter_fullname: '',
+          newsletter_email: ''
+        });
+      }).catch(console.log);
+    }
   }
 
   render() {
@@ -72,9 +81,9 @@ class Footer extends Component {
         </div>
         <div className="footer__top-section">
           <div className="footer__logo">
-            <a href="https://www.zenithdakhla.com">
-              <img src={logo} style={{'max-height': '61px'}} alt="property-logo"/>
-            </a>
+            <Link to="/">
+              <img src={logo} style={{maxHeight: '61px'}} alt="property-logo"/>
+            </Link>
           </div>
 
           <div className="footer__contact-info">
@@ -90,24 +99,29 @@ class Footer extends Component {
           <div className="footer__menu">
             <ul id="menu-meridian-footer-menu" className="">
               <li id="menu-item-868" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-868">
-                <a
-                  href="https://www.zenithdakhla.com/contact" className="animsition-link">CONTACT</a></li>
-              <li id="menu-item-2467"
-                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2467"><a
-                href="https://www.zenithdakhla.com" className="animsition-link">The Resorts</a></li>
+                <Link to="/contact" className="animsition-link">CONTACT</Link>
+              </li>
+              <li id="menu-item-2467" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2467">
+                <Link to="/" className="animsition-link">The Resorts</Link>
+              </li>
             </ul>
           </div>
           <div className="footer__social-copyright">
             <ul className="footer__socialbox">
-              <li><a href="http://www.facebook.com/Zenithdakhla" target="_blank"><i className="fa fa-facebook"></i></a>
+              <li>
+                <a href="http://www.facebook.com/Zenithdakhla" target="_blank" rel="noopener noreferrer">
+                  <i className="fa fa-facebook"/>
+                </a>
               </li>
-              <li><a href="http://www.instagram.com/zenithdakhla" target="_blank"><i
-                className="fa fa-instagram"></i></a>
+              <li>
+                <a href="http://www.instagram.com/zenithdakhla" target="_blank" rel="noopener noreferrer">
+                  <i className="fa fa-instagram"/>
+                </a>
               </li>
             </ul>
             <div className="footer__copyright">
               <p className="footer__copyright--original active">Zenith Dakhla <span>© 2019</span></p>
-              <p className="footer__copyright--hover">by <a href="https://brolopers.com/" target="_blank">Brolopers</a>
+              <p className="footer__copyright--hover">by <a href="https://brolopers.com/" target="_blank" rel="noopener noreferrer">Brolopers</a>
               </p>
             </div>
           </div>

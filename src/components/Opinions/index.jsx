@@ -69,7 +69,7 @@ const Opinions = () => (
         <button type="button" role="presentation" className="owl-next"><span aria-label="Next">›</span></button>
       </div>
       <div className="owl-dots disabled">
-        <button role="button" className="owl-dot active"><span /></button>
+        <button className="owl-dot active"><span /></button>
       </div>
     </div>
   </div>

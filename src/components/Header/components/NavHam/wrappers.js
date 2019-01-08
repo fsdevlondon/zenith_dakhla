@@ -13,6 +13,21 @@ const hamLinePosition = position => {
   }
 }
 
+const hamLineOpenMenu = (position, openMenu) => {
+  if (openMenu) {
+    switch (position) {
+      case 'one':
+        return 'top: 11px;transform: rotate(45deg);';
+      case 'two':
+        return 'opacity: 0;';
+      case 'three':
+        return 'top: 11px;transform: rotate(-45deg);';
+      default:
+        return '';
+    }
+  }
+}
+
 export const Ham = styled.div`
   cursor: pointer;
   position: fixed;
@@ -34,4 +49,5 @@ export const HamLine = styled.div`
   position: absolute;
   transition: all 0.4s ease-in-out 0s;
   ${props => hamLinePosition(props.num)};
+  ${props => hamLineOpenMenu(props.num, props.openMenu)};
 `;

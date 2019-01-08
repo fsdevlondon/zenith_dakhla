@@ -5,7 +5,6 @@ import TwinSlider from '../../TwinSlider';
 import Rooms from '../../Rooms';
 import Guides from '../../Guides';
 import Footer from '../../Footer';
-import NavSlider from '../../NavSlider';
 import Opinions from '../../Opinions';
 
 const HomeContainer = () => (
@@ -19,7 +18,6 @@ const HomeContainer = () => (
       <Guides />
     </div>
     <Footer/>
-    <NavSlider/>
   </Fragment>
 );
 

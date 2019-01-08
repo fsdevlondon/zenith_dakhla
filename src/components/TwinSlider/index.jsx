@@ -1,9 +1,14 @@
 import React from 'react';
+import Spherical0447 from '../../assets/img/Spherical-Urbanica-0447.jpg';
+import Spherical0448 from '../../assets/img/Spherical-Urbanica-9593.jpg';
+import Spherical0509 from '../../assets/img/Spherical-Urbanica-0509-1.jpg';
+import Spherical0510 from '../../assets/img/Spherical-Urbanica-0614.jpg';
+import amapaLogo from '../../assets/img/hotel_amapa_logo.png';
 
 const TwinSlider = () => (
   <div className="twin-slider">
     <div className="twin-slider__numbers">
-      <i className="ion ion-arrow-left-b"></i>
+      <i className="ion ion-arrow-left-b"/>
       <span>23.9139° N, 15.7812° W</span>
     </div>
 
@@ -15,60 +20,60 @@ const TwinSlider = () => (
             <div className="owl-item cloned" style={{width: '574px'}}>
               <div className="twin-slider__img">
                 <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0447.jpg"
+                     src={Spherical0447}
                      alt="spherical-urbanica-0447"/>
                 <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0447.jpg"
+                     src={Spherical0447}
                      alt="spherical-urbanica-0447"/>
               </div>
             </div>
             <div className="owl-item cloned" style={{width: '574px'}}>
               <div className="twin-slider__img">
                 <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-9593.jpg"
+                     src={Spherical0448}
                      alt="spherical-urbanica-9593"/>
                 <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-9593-1.jpg"
+                     src={Spherical0448}
                      alt="spherical-urbanica-9593-2"/>
               </div>
             </div>
             <div className="owl-item" style={{width: '574px'}}>
               <div className="twin-slider__img">
                 <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0447.jpg"
+                     src={Spherical0447}
                      alt="spherical-urbanica-0447"/>
                 <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0447.jpg"
+                     src={Spherical0447}
                      alt="spherical-urbanica-0447"/>
               </div>
             </div>
             <div className="owl-item active" style={{width: '574px'}}>
               <div className="twin-slider__img">
                 <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-9593.jpg"
+                     src={Spherical0448}
                      alt="spherical-urbanica-9593"/>
                 <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-9593-1.jpg"
+                     src={Spherical0448}
                      alt="spherical-urbanica-9593-2"/>
               </div>
             </div>
             <div className="owl-item cloned" style={{width: '574px'}}>
               <div className="twin-slider__img">
                 <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0447.jpg"
+                     src={Spherical0447}
                      alt="spherical-urbanica-0447"/>
                 <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0447.jpg"
+                     src={Spherical0447}
                      alt="spherical-urbanica-0447"/>
               </div>
             </div>
             <div className="owl-item cloned" style={{width: '574px'}}>
               <div className="twin-slider__img">
                 <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-9593.jpg"
+                     src={Spherical0448}
                      alt="spherical-urbanica-9593"/>
                 <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-9593-1.jpg"
+                     src={Spherical0448}
                      alt="spherical-urbanica-9593-2"/>
               </div>
             </div>
@@ -79,7 +84,7 @@ const TwinSlider = () => (
           </button>
           <button type="button" role="presentation" className="owl-next"><span aria-label="Next">›</span></button>
         </div>
-        <div className="owl-dots disabled"></div>
+        <div className="owl-dots disabled"/>
       </div>
 
 
@@ -87,7 +92,7 @@ const TwinSlider = () => (
 
     <div className="twin-slider__right fadein-slideready fadein-slideup">
       <div className="twin-slider__right-logo fadein-slideready">
-        <img src="https://www.urbanicathehotels.com/wp-content/themes/amapa/images/hotel_amapa_logo.png"/>
+        <img src={amapaLogo} alt="logo"/>
       </div>
 
       <div className="twin-slider__imglist twin-slider-right-js owl-carousel drag drag-right owl-loaded owl-drag">
@@ -97,60 +102,60 @@ const TwinSlider = () => (
             <div className="owl-item cloned" style={{width: '482px'}}>
               <div className="twin-slider__img">
                 <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0509-1.jpg"
+                     src={Spherical0509}
                      alt="spherical-urbanica-0509-2"/>
                 <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0509-1.jpg"
+                     src={Spherical0509}
                      alt="spherical-urbanica-0509-2"/>
               </div>
             </div>
             <div className="owl-item cloned" style={{width: '482px'}}>
               <div className="twin-slider__img">
                 <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0614.jpg"
+                     src={Spherical0510}
                      alt="spherical-urbanica-0614"/>
                 <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0614.jpg"
+                     src={Spherical0510}
                      alt="spherical-urbanica-0614"/>
               </div>
             </div>
             <div className="owl-item" style={{width: '482px'}}>
               <div className="twin-slider__img">
                 <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0509-1.jpg"
+                     src={Spherical0509}
                      alt="spherical-urbanica-0509-2"/>
                 <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0509-1.jpg"
+                     src={Spherical0509}
                      alt="spherical-urbanica-0509-2"/>
               </div>
             </div>
             <div className="owl-item active" style={{width: '482px'}}>
               <div className="twin-slider__img">
                 <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0614.jpg"
+                     src={Spherical0510}
                      alt="spherical-urbanica-0614"/>
                 <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0614.jpg"
+                     src={Spherical0510}
                      alt="spherical-urbanica-0614"/>
               </div>
             </div>
             <div className="owl-item cloned" style={{width: '482px'}}>
               <div className="twin-slider__img">
                 <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0509-1.jpg"
+                     src={Spherical0509}
                      alt="spherical-urbanica-0509-2"/>
                 <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0509-1.jpg"
+                     src={Spherical0509}
                      alt="spherical-urbanica-0509-2"/>
               </div>
             </div>
             <div className="owl-item cloned" style={{width: '482px'}}>
               <div className="twin-slider__img">
                 <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0614.jpg"
+                     src={Spherical0510}
                      alt="spherical-urbanica-0614"/>
                 <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0614.jpg"
+                     src={Spherical0510}
                      alt="spherical-urbanica-0614"/>
               </div>
             </div>
@@ -161,7 +166,7 @@ const TwinSlider = () => (
           </button>
           <button type="button" role="presentation" className="owl-next"><span aria-label="Next">›</span></button>
         </div>
-        <div className="owl-dots disabled"></div>
+        <div className="owl-dots disabled"/>
       </div>
 
     </div>
@@ -170,10 +175,10 @@ const TwinSlider = () => (
 
       <div className="twin-slider__nav">
         <div className="twin-slider__nav-prev">
-          <i className="ion ion-md-arrow-dropleft"></i>
+          <i className="ion ion-md-arrow-dropleft"/>
         </div>
         <div className="twin-slider__nav-next">
-          <i className="ion ion-md-arrow-dropright"></i>
+          <i className="ion ion-md-arrow-dropright"/>
         </div>
       </div>
 

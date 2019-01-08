@@ -1,4 +1,8 @@
 import React from 'react';
+import Spherical001 from '../../assets/img/Spherical-Urbanica-0125.jpg';
+import Spherical002 from '../../assets/img/Spherical-Urbanica-9868_edit.jpg';
+import Spherical003 from '../../assets/img/Spherical-Urbanica-0399-e1539553231535.jpg';
+import Spherical004 from '../../assets/img/Spherical-Urbanica-Hotels-Meridian-South-Beach_bar_02B-1.jpg';
 
 const Rooms = () => (
   <div className="photo-content-double-slider fadein-slideready">
@@ -11,13 +15,13 @@ const Rooms = () => (
               <div className="photo-content-double-slider__images">
                 <div className="photo-content-double-slider__image photo-content-double-slider__image--left">
                   <img
-                    src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0125.jpg"
+                    src={Spherical001}
                     alt="spherical-urbanica-0125"/>
                 </div>
 
                 <div className="photo-content-double-slider__image photo-content-double-slider__image--right">
                   <img
-                    src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-9868_edit.jpg"
+                    src={Spherical002}
                     alt="spherical-urbanica-9868_edit"/>
                 </div>
               </div>
@@ -27,8 +31,8 @@ const Rooms = () => (
                   <span className="photo-content-double-slider__counter">01</span>
                   <span className="photo-content-double-slider__subtitle">Simple details are our luxury</span>
                   <h2 className="photo-content-double-slider__title">Rooms + Suites</h2>
-                  <p><span style={{'font-weight': 400}}>All rooms feature natural wood elements that stand out against a white palate, creating the feeling of Dakhla at the desert beach.&nbsp;</span><span
-                    style={{'font-weight': 400}}>The bed is truly the centerpiece of the room, and its comfort is one of our best amenities. </span>
+                  <p><span style={{fontWeight: 400}}>All rooms feature natural wood elements that stand out against a white palate, creating the feeling of Dakhla at the desert beach.&nbsp;</span><span
+                    style={{fontWeight: 400}}>The bed is truly the centerpiece of the room, and its comfort is one of our best amenities. </span>
                   </p>
                   <p>.</p>
                   <div className="photo-content-double-slider__btn-container">
@@ -45,13 +49,13 @@ const Rooms = () => (
               <div className="photo-content-double-slider__images">
                 <div className="photo-content-double-slider__image photo-content-double-slider__image--left">
                   <img
-                    src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0399-e1539553231535.jpg"
+                    src={Spherical003}
                     alt="spherical-urbanica-0399"/>
                 </div>
 
                 <div className="photo-content-double-slider__image photo-content-double-slider__image--right">
                   <img
-                    src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-Hotels-Meridian-South-Beach_bar_02B-1.jpg"
+                    src={Spherical004}
                     alt="spherical-urbanica-hotels-meridian-south-beach_bar_02b-2"/>
                 </div>
               </div>
@@ -78,13 +82,13 @@ const Rooms = () => (
               <div className="photo-content-double-slider__images">
                 <div className="photo-content-double-slider__image photo-content-double-slider__image--left">
                   <img
-                    src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0399-e1539553231535.jpg"
+                    src={Spherical003}
                     alt="spherical-urbanica-0399"/>
                 </div>
 
                 <div className="photo-content-double-slider__image photo-content-double-slider__image--right">
                   <img
-                    src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-Hotels-Meridian-South-Beach_bar_02B-1.jpg"
+                    src={Spherical004}
                     alt="spherical-urbanica-hotels-meridian-south-beach_bar_02b-2"/>
                 </div>
               </div>

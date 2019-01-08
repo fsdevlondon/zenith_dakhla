@@ -12,6 +12,7 @@ export const Nav = styled.nav`
   @media (max-width: 767px) {
     height: 105px;
   }
+  ${props => props.openMenu ? 'z-index: 12;background-color: transparent;' : ''}
 `;
 
 export const NavLogo = styled.div`
