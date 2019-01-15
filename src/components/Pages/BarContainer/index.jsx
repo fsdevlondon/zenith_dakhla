@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import NavHeader from '../../Header';
 import Footer from '../../Footer';
-import Spherical001 from '../../../assets/img/'; //https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0058.jpg
-import Spherical002 from '../../../assets/img/'; //https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0509-e1534557790516.jpg
+import Spherical001 from '../../../assets/img/Spherical-Urbanica-0058.jpg'; //https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0058.jpg
+import Spherical002 from '../../../assets/img/Spherical-Urbanica-0509-e1534557790516.jpg'; //https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0509-e1534557790516.jpg
 
 const BarContainer = () => (
   <Fragment>
@@ -25,7 +25,7 @@ const BarContainer = () => (
               <span className="photo-content__title">The Food Marchand</span>
               <p>World renowned Chef Fernando Trocca uses local ingredients from the city’s most famed purveyors and
                 blends them to create our modern delicious menu that spans from Breakfast to a late night fare. Eat like
-                a South Beach local.</p>
+                a Moroccan King.</p>
               <div className="photo-content__links">
                 <div className="photo-content__link">
                   <Link to="/food-drink/food-marchand" className="btn btn--plain btn--text-black valign-bottom"><span>View Details</span></Link>
@@ -48,7 +48,7 @@ const BarContainer = () => (
               <span className="photo-content__title">The Food Marchand</span>
               <p>World renowned Chef Fernando Trocca uses local ingredients from the city’s most famed purveyors and
                 blends them to create our modern delicious menu that spans from Breakfast to a late night fare. Eat like
-                a South Beach local.</p>
+                a Moroccan King.</p>
               <div className="photo-content__links">
                 <div className="photo-content__link">
                   <Link to="/food-drink/food-marchand" className="btn btn--plain btn--text-black valign-bottom"><span>View Details</span></Link>
@@ -62,9 +62,8 @@ const BarContainer = () => (
               <span className="photo-content__subtitle">#notyouraverageminibar</span>
               <span className="photo-content__title">Minibar </span>
               <p>If you’re into delicious craft cocktails and good times then head to Minibar. The
-                #notyouraverageminibar is one of Miami’s hottest new bars. Minibar provides fresh, mid-century lounge
-                with a sexy, contemporary twist located in the quaint South of Fifth area located at Urbanica The
-                Meridian Hotel.</p>
+                #notyouraverageminibar is one of Dakhla’s hottest new bars. Minibar provides fresh, mid-century lounge
+                with a sexy, contemporary twist located in the oasis of the Dakhla Lagoon at Zenith Dakhla Resort.</p>
               <div className="photo-content__links">
                 <div className="photo-content__link">
                   <Link to="/food-drink/minibar" className="btn btn--plain btn--text-black valign-bottom"><span>View Details</span></Link>
@@ -86,9 +85,8 @@ const BarContainer = () => (
               <span className="photo-content__subtitle">#notyouraverageminibar</span>
               <span className="photo-content__title">Minibar </span>
               <p>If you’re into delicious craft cocktails and good times then head to Minibar. The
-                #notyouraverageminibar is one of Miami’s hottest new bars. Minibar provides fresh, mid-century lounge
-                with a sexy, contemporary twist located in the quaint South of Fifth area located at Urbanica The
-                Meridian Hotel.</p>
+                #notyouraverageminibar is one of Dakhla’s hottest new bars. Minibar provides fresh, mid-century lounge
+                with a sexy, contemporary twist located in the oasis of the Dakhla Lagoon at Zenith Dakhla Resort.</p>
               <div className="photo-content__links">
                 <div className="photo-content__link">
                   <Link to="/food-drink/minibar" className="btn btn--plain btn--text-black valign-bottom"><span>View Details</span></Link>

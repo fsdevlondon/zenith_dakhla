@@ -46,32 +46,19 @@ const SectionBoking = () => (
 
     <div className="content-images-booking__img-block">
       <div className="content-images-booking__img-1 fadein-slideready fadein-slideup">
-        <img className="img-desktop"
-             src={Spherical0297}
-             alt="spherical-0297" />
-        <img className="img-mobile"
-             src={Spherical0297}
-             alt="spherical-0297" />
+        <img className="img-desktop" src={Spherical0297} alt="spherical-0297" />
+        <img className="img-mobile" src={Spherical0297} alt="spherical-0297" />
       </div>
 
       <div className="content-images-booking__img-2 fadein-slideready fadein-slideup">
-        <img className="img-desktop"
-             src={Spherical0298}
-             alt="spherical" />
-        <img className="img-mobile"
-             src={Spherical0298}
-             alt="spherical" />
+        <img className="img-desktop" src={Spherical0298} alt="spherical" />
+        <img className="img-mobile" src={Spherical0298} alt="spherical" />
       </div>
 
       <div className="content-images-booking__img-3 fadein-slideready">
-        <img className="img-desktop"
-             src={Spherical0299}
-             alt="spherical-urbanica-hotels-meridian-south-beach_front-desk_01b" />
-        <img className="img-mobile"
-             src={Spherical0299}
-             alt="spherical-urbanica-hotels-meridian-south-beach_front-desk_01b" />
+        <img className="img-desktop" src={Spherical0299} alt="spherical-urbanica-hotels-meridian-south-beach_front-desk_01b" />
+        <img className="img-mobile" src={Spherical0299} alt="spherical-urbanica-hotels-meridian-south-beach_front-desk_01b" />
       </div>
-
     </div>
   </div>
 );

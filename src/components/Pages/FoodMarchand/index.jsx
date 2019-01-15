@@ -1,6 +1,14 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import NavHeader from '../../Header';
 import Footer from '../../Footer';
+import xMark from '../../../assets/img/x_mark.png';
+import image001 from '../../../assets/img/Spherical-Urbanica-Hotels-Meridian-South-Beach_pool-cabana_01.jpg';
+import image002 from '../../../assets/img/Spherical-Urbanica-0425-e1534556888521.jpg';
+import image003 from '../../../assets/img/Spherical-Urbanica-0451-small.png';
+import image004 from '../../../assets/img/Spherical-Urbanica-0421-e1539582866753.jpg';
+import image005 from '../../../assets/img/Spherical-Urbanica-0225.jpg';
+
 
 const FoodMarchand = () => (
   <Fragment>
@@ -13,17 +21,17 @@ const FoodMarchand = () => (
         </div>
       </div>
       <div className="banner__close btn--hvr-fade">
-        <a href="https://www.urbanicathehotels.com/the-meridian/food-drink/">
-          <img src="https://www.urbanicathehotels.com/wp-content/themes/amapa/images/x_mark.png" alt="x mark"/>
-        </a>
+        <Link to="/food-drink">
+          <img src={xMark} alt="x mark"/>
+        </Link>
       </div>
       <div className="banner__image-wrap banner__image-desktop ">
         <div className="banner__image"
-             style={{backgroundImage: "url('https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-Hotels-Meridian-South-Beach_Cafe_1B.jpg')"}}/>
+             style={{backgroundImage: `url('${image001}')`}}/>
       </div>
       <div className="banner__image-wrap banner__image-mobile ">
         <div className="banner__image"
-             style={{backgroundImage: "url('https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-Hotels-Meridian-South-Beach_Cafe_1B.jpg')"}}/>
+             style={{backgroundImage: `url('${image001}')`}}/>
       </div>
     </div>
     <div className="section">
@@ -33,12 +41,15 @@ const FoodMarchand = () => (
             <div className="content-subnav__nav content-subnav__nav--desktop fadein-slideready fadein-slideup"
                  style={{top: '3636.609375px'}}>
               <ul>
-                <li data-filter="overview" className="overview"><span
-                  className="btn btn--plain btn--xsmall btn--text-black">Overview</span></li>
-                <li data-filter="gallery-restaurant" className="gallery-restaurant"><span
-                  className="btn btn--plain btn--xsmall btn--text-black">Gallery</span></li>
-                <li data-filter="menus" className="menus active"><span
-                  className="btn btn--plain btn--xsmall btn--text-black">Menus</span></li>
+                <li data-filter="overview" className="overview">
+                  <span className="btn btn--plain btn--xsmall btn--text-black">Overview</span>
+                </li>
+                <li data-filter="gallery-restaurant" className="gallery-restaurant">
+                  <span className="btn btn--plain btn--xsmall btn--text-black">Gallery</span>
+                </li>
+                <li data-filter="menus" className="menus active">
+                  <span className="btn btn--plain btn--xsmall btn--text-black">Menus</span>
+                </li>
               </ul>
             </div>
             <div className="content-subnav__nav content-subnav__nav--mobile fadein-slideready">
@@ -64,7 +75,7 @@ const FoodMarchand = () => (
                     <h2 className="content-subnav__title">The Food Marchand</h2>
                   </div>
                   <p>Using local ingredients from the city’s most famed purveyors and blends them to create our modern
-                    delicious menu that spans from Breakfast to a late night fare. Eat like a South Beach local.</p>
+                    delicious menu that spans from Breakfast to a late night fare. Eat like a Moroccan King.</p>
                 </div>
               </div>
               <div id="content-subnav__item-reservation"
@@ -72,13 +83,13 @@ const FoodMarchand = () => (
                 <div className="reserve-box">
                   <div className="reserve-box__imgbox">
                     <img className="img-desktop"
-                         src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0425-e1534556888521.jpg"
+                         src={image002}
                          alt=""/>
                     <img className="img-tablet"
-                         src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0425-e1534556888521.jpg"
+                         src={image002}
                          alt=""/>
                     <img className="img-mobile"
-                         src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0425-e1534556888521.jpg"
+                         src={image002}
                          alt=""/>
                   </div>
                 </div>
@@ -105,49 +116,51 @@ const FoodMarchand = () => (
                           <div className="owl-item cloned" style={{width: '1240px'}}>
                             <div className="category-gallery__image">
                               <img
-                                src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0451-small.png"
-                                alt="spherical-urbanica-0451-small-2"/>
+                                src={image003}
+                                alt="spherical-0451-small-2"/>
                                 <span>Breakfast </span>
                             </div>
                           </div>
                           <div className="owl-item cloned" style={{width: '1240px'}}>
                             <div className="category-gallery__image">
                               <img
-                                src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0451-small.png"
-                                alt="spherical-urbanica-0451-small-2"/>
+                                src={image003}
+                                alt="spherical-0451-small-2"/>
                                 <span>Breakfast </span>
                             </div>
                           </div>
                           <div className="owl-item active" style={{width: '1240px'}}>
                             <div className="category-gallery__image">
                               <img
-                                src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0451-small.png"
-                                alt="spherical-urbanica-0451-small-2"/>
+                                src={image003}
+                                alt="spherical-0451-small-2"/>
                                 <span>Breakfast </span>
                             </div>
                           </div>
                           <div className="owl-item cloned" style={{width: '1240px'}}>
                             <div className="category-gallery__image">
                               <img
-                                src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0451-small.png"
-                                alt="spherical-urbanica-0451-small-2"/>
+                                src={image003}
+                                alt="spherical-0451-small-2"/>
                                 <span>Breakfast </span>
                             </div>
                           </div>
                           <div className="owl-item cloned" style={{width: '1240px'}}>
                             <div className="category-gallery__image">
                               <img
-                                src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0451-small.png"
-                                alt="spherical-urbanica-0451-small-2"/>
+                                src={image003}
+                                alt="spherical-0451-small-2"/>
                                 <span>Breakfast </span>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div className="owl-nav disabled">
-                        <button type="button" role="presentation" className="owl-prev"><span
-                          aria-label="Previous">‹</span></button>
-                        <button type="button" role="presentation" className="owl-next"><span aria-label="Next">›</span>
+                        <button type="button" role="presentation" className="owl-prev">
+                          <span aria-label="Previous">‹</span>
+                        </button>
+                        <button type="button" role="presentation" className="owl-next">
+                          <span aria-label="Next">›</span>
                         </button>
                       </div>
                       <div className="owl-dots disabled">
@@ -164,49 +177,51 @@ const FoodMarchand = () => (
                           <div className="owl-item cloned" style={{width: '1240px'}}>
                             <div className="category-gallery__image">
                               <img
-                                src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0421-e1539582866753.jpg"
-                                alt="spherical-urbanica-0421-2"/>
+                                src={image004}
+                                alt="spherical-0421-2"/>
                                 <span>Midday Refreshments </span>
                             </div>
                           </div>
                           <div className="owl-item cloned" style={{width: '1240px'}}>
                             <div className="category-gallery__image">
                               <img
-                                src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0421-e1539582866753.jpg"
-                                alt="spherical-urbanica-0421-2"/>
+                                src={image004}
+                                alt="spherical-0421-2"/>
                                 <span>Midday Refreshments </span>
                             </div>
                           </div>
                           <div className="owl-item active" style={{width: '1240px'}}>
                             <div className="category-gallery__image">
                               <img
-                                src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0421-e1539582866753.jpg"
-                                alt="spherical-urbanica-0421-2"/>
+                                src={image004}
+                                alt="spherical-0421-2"/>
                                 <span>Midday Refreshments </span>
                             </div>
                           </div>
                           <div className="owl-item cloned" style={{width: '1240px'}}>
                             <div className="category-gallery__image">
                               <img
-                                src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0421-e1539582866753.jpg"
-                                alt="spherical-urbanica-0421-2"/>
+                                src={image004}
+                                alt="spherical-0421-2"/>
                                 <span>Midday Refreshments </span>
                             </div>
                           </div>
                           <div className="owl-item cloned" style={{width: '1240px'}}>
                             <div className="category-gallery__image">
                               <img
-                                src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0421-e1539582866753.jpg"
-                                alt="spherical-urbanica-0421-2"/>
+                                src={image004}
+                                alt="spherical-0421-2"/>
                                 <span>Midday Refreshments </span>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div className="owl-nav disabled">
-                        <button type="button" role="presentation" className="owl-prev"><span
-                          aria-label="Previous">‹</span></button>
-                        <button type="button" role="presentation" className="owl-next"><span aria-label="Next">›</span>
+                        <button type="button" role="presentation" className="owl-prev">
+                          <span aria-label="Previous">‹</span>
+                        </button>
+                        <button type="button" role="presentation" className="owl-next">
+                          <span aria-label="Next">›</span>
                         </button>
                       </div>
                       <div className="owl-dots disabled">
@@ -223,49 +238,51 @@ const FoodMarchand = () => (
                           <div className="owl-item cloned" style={{width: '1240px'}}>
                             <div className="category-gallery__image">
                               <img
-                                src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0225.jpg"
-                                alt="spherical-urbanica-0225"/>
+                                src={image005}
+                                alt="spherical-0225"/>
                                 <span>Take your time </span>
                             </div>
                           </div>
                           <div className="owl-item cloned" style={{width: '1240px'}}>
                             <div className="category-gallery__image">
                               <img
-                                src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0225.jpg"
-                                alt="spherical-urbanica-0225"/>
+                                src={image005}
+                                alt="spherical-0225"/>
                                 <span>Take your time </span>
                             </div>
                           </div>
                           <div className="owl-item active" style={{width: '1240px'}}>
                             <div className="category-gallery__image">
                               <img
-                                src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0225.jpg"
-                                alt="spherical-urbanica-0225"/>
+                                src={image005}
+                                alt="spherical-0225"/>
                                 <span>Take your time </span>
                             </div>
                           </div>
                           <div className="owl-item cloned" style={{width: '1240px'}}>
                             <div className="category-gallery__image">
                               <img
-                                src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0225.jpg"
-                                alt="spherical-urbanica-0225"/>
+                                src={image005}
+                                alt="spherical-0225"/>
                                 <span>Take your time </span>
                             </div>
                           </div>
                           <div className="owl-item cloned" style={{width: '1240px'}}>
                             <div className="category-gallery__image">
                               <img
-                                src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0225.jpg"
-                                alt="spherical-urbanica-0225"/>
+                                src={image005}
+                                alt="spherical-0225"/>
                                 <span>Take your time </span>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div className="owl-nav disabled">
-                        <button type="button" role="presentation" className="owl-prev"><span
-                          aria-label="Previous">‹</span></button>
-                        <button type="button" role="presentation" className="owl-next"><span aria-label="Next">›</span>
+                        <button type="button" role="presentation" className="owl-prev">
+                          <span aria-label="Previous">‹</span>
+                        </button>
+                        <button type="button" role="presentation" className="owl-next">
+                          <span aria-label="Next">›</span>
                         </button>
                       </div>
                       <div className="owl-dots disabled">
@@ -312,8 +329,7 @@ const FoodMarchand = () => (
                   </div>
                 </div>
               </div>
-              <div id="content-subnav__item-menus" className="content-subnav__item fadein-slideready fadein-slideup"
-                   tabIndex="1">
+              <div id="content-subnav__item-menus" className="content-subnav__item fadein-slideready fadein-slideup" tabIndex="1">
                 <div className="accordion">
                   <div className="accordion__item accordion__item--large">
                     <div className="accordion__title-container">
@@ -1207,8 +1223,7 @@ const FoodMarchand = () => (
               <div className="owl-stage"/>
             </div>
             <div className="owl-nav disabled">
-              <button type="button" role="presentation" className="owl-prev"><span aria-label="Previous">‹</span>
-              </button>
+              <button type="button" role="presentation" className="owl-prev"><span aria-label="Previous">‹</span></button>
               <button type="button" role="presentation" className="owl-next"><span aria-label="Next">›</span></button>
             </div>
             <div className="owl-dots disabled"/>

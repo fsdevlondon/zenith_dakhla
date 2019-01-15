@@ -2,9 +2,9 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import NavHeader from '../../Header';
 import Footer from '../../Footer';
-import xMark from '../../../assets/img/'; // https://www.urbanicathehotels.com/wp-content/themes/amapa/images/x_mark.png
-import resizeIcon from '../../../assets/img/'; // https://hotelamapa.compass.sphrcl.co/wp-content/themes/amapa/images/contact_resize_icon.png
-import Spherical001 from '../../../assets/img/'; // https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0320.jpg
+import xMark from '../../../assets/img/x_mark.png';
+import resizeIcon from '../../../assets/img/contact_resize_icon.png';
+import Spherical001 from '../../../assets/img/Spherical-Urbanica-0320.jpg';
 
 const ContactContainer = () => (
   <Fragment>
@@ -44,7 +44,7 @@ const ContactContainer = () => (
                           <input type="text" className="formy__datepicker--banner-inline hasDatepicker"
                                  id="banner_inline_reserve_arrive_text" placeholder="Arrive"/>
                           <input type="text" className="formy__datepicker--overlay"
-                                   id="overlay_reserve_arrive_text" placeholder="Arrive"/>
+                                 id="overlay_reserve_arrive_text" placeholder="Arrive"/>
                         </div>
                       </div>
                     </div>
@@ -100,35 +100,51 @@ const ContactContainer = () => (
             <form method="post" className="wpcf7-form" noValidate="novalidate">
               <div className="formy">
                 <div className="formy__row">
-                  <div className="formy__col formy__col--50"><span className="wpcf7-form-control-wrap firstname"><input
+                  <div className="formy__col formy__col--50"><span className="wpcf7-form-control-wrap firstname">
+                    <input
                     type="text" name="firstname" value="" size="40"
                     className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required formy__input"
-                    aria-required="true" aria-invalid="false" placeholder="First Name"/></span></div>
-                  <div className="formy__col formy__col--50"><span className="wpcf7-form-control-wrap lastname"><input
-                    type="text" name="lastname" value="" size="40"
-                    className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required formy__input"
-                    aria-required="true" aria-invalid="false" placeholder="Last Name"/></span></div>
+                    aria-required="true" aria-invalid="false" placeholder="First Name"/>
+                    </span>
+                  </div>
+                  <div className="formy__col formy__col--50">
+                    <span className="wpcf7-form-control-wrap lastname">
+                      <input
+                        type="text" name="lastname" value="" size="40"
+                        className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required formy__input"
+                        aria-required="true" aria-invalid="false" placeholder="Last Name"/>
+                    </span>
+                  </div>
                 </div>
                 <div className="formy__row">
-                  <div className="formy__col formy__col--50 formy__col--end"><span
-                    className="wpcf7-form-control-wrap email"><input type="text" name="email" value="" size="40"
-                                                                     className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required formy__input"
-                                                                     aria-required="true" aria-invalid="false"
-                                                                     placeholder="Email"/></span></div>
-                  <div className="formy__col formy__col--50"><span className="wpcf7-form-control-wrap phone"><input
-                    type="number" name="phone" value=""
-                    className="wpcf7-form-control wpcf7-number wpcf7-validates-as-number formy__input"
-                    aria-invalid="false" placeholder="Phone"/></span></div>
+                  <div className="formy__col formy__col--50 formy__col--end">
+                    <span className="wpcf7-form-control-wrap email">
+                      <input type="text" name="email" value="" size="40"
+                       className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required formy__input"
+                       aria-required="true" aria-invalid="false"
+                       placeholder="Email"/>
+                    </span>
+                  </div>
+                  <div className="formy__col formy__col--50">
+                    <span className="wpcf7-form-control-wrap phone">
+                      <input
+                        type="number" name="phone" value=""
+                        className="wpcf7-form-control wpcf7-number wpcf7-validates-as-number formy__input"
+                        aria-invalid="false" placeholder="Phone"/>
+                    </span>
+                  </div>
                   <div className="clear"/>
                 </div>
                 <div className="formy__row">
                   <div className="formy__col formy__col--100 formy__col--end">
                     <div className="formy__textarea">
-                      <span className="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10"
-                                                                                  className="wpcf7-form-control wpcf7-textarea formy__textarea"
-                                                                                  aria-invalid="false"
-                                                                                  placeholder="Message"/></span>
-                      <p></p>
+                      <span className="wpcf7-form-control-wrap message">
+                        <textarea name="message" cols="40" rows="10"
+                          className="wpcf7-form-control wpcf7-textarea formy__textarea"
+                          aria-invalid="false"
+                          placeholder="Message"/>
+                      </span>
+                      <p/>
                       <div className="formy__textarea-resize-icon">
                         <img src={resizeIcon} alt="resize icon"/>
                       </div>

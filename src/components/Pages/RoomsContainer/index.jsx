@@ -1,12 +1,15 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import NavHeader from '../../Header';
 import Footer from '../../Footer';
+import imageRoom001 from '../../../assets/img/Spherical-Urbanica-0182-small.png';
+
 
 const RoomsContainer = () => (
   <Fragment>
     <NavHeader />
-    <div className="wrapper__background-pattern"></div>
-    <div className="nav-block"></div>
+    <div className="wrapper__background-pattern"/>
+    <div className="nav-block"/>
     <div className="section section--background-left">
       <div className="intro-content  fadein-slideready fadein-slideup">
         <h2 className="intro-content__subtitle"/>
@@ -30,24 +33,21 @@ const RoomsContainer = () => (
                 with large private Terraces that boast views of South Beach and our surrounding lush neighborhood…</p>
               <div className="photo-content__links">
                 <div className="photo-content__link">
-                  <a href="https://www.urbanicathehotels.com/the-meridian/rooms/the-terrace/"
-                     className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></a>
+                  <Link to="/rooms/the-terrace" className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></Link>
                 </div>
                 <div className="photo-content__link">
-                  <a
-                    href=""
-                    className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
+                  <a href="" className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
                 </div>
               </div>
             </div>
             <div className="photo-content__imglist">
               <div className="photo-content__img">
                 <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0182-small.png"
-                     alt="spherical-urbanica-0182-small"/>
+                     src={imageRoom001}
+                     alt="spherical-0182-small"/>
                 <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0182-small.png"
-                     alt="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0182-small.png"/>
+                     src={imageRoom001}
+                     alt="spherical-0182-small"/>
               </div>
             </div>
 
@@ -58,12 +58,10 @@ const RoomsContainer = () => (
                 with large private Terraces that boast views of South Beach and our surrounding lush neighborhood…</p>
               <div className="photo-content__links">
                 <div className="photo-content__link">
-                  <a href="https://www.urbanicathehotels.com/the-meridian/rooms/the-terrace/"
-                     className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></a>
+                  <Link to="/rooms/the-terrace" className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></Link>
                 </div>
                 <div className="photo-content__link">
-                  <a href="https://be.synxis.com/?adult=1&amp;arrive=2018-11-01&amp;chain=24140&amp;child=0&amp;currency=USD&amp;depart=2018-11-02&amp;hotel=5108&amp;level=hotel&amp;locale=en-US&amp;rooms=1&amp;sbe_ri=0"
-                    className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
+                  <a href="" className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
                 </div>
               </div>
             </div>

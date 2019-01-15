@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import xMark from '../../../assets/img/x_mark.png';
+import image001 from '../../../assets/img/unnamed-1.jpg';
 
 const LoftRoom = () => (
   <div className="page-template page-template-page-templates page-template-page-detail page-template-page-templatespage-detail-php page page-id-435 page-child parent-pageid-360 tribe-js">
@@ -13,16 +15,14 @@ const LoftRoom = () => (
           </div>
           <div className="banner__close btn--hvr-fade">
             <Link to="/rooms">
-              <img src="https://www.urbanicathehotels.com/wp-content/themes/amapa/images/x_mark.png" alt="x mark"/>
+              <img src={xMark} alt="x mark"/>
             </Link>
           </div>
           <div className="banner__image-wrap banner__image-desktop ">
-            <div className="banner__image"
-                 style={{backgroundImage: 'url(https://www.urbanicathehotels.com/wp-content/uploads/2018/08/unnamed-1.jpg)'}}/>
+            <div className="banner__image" style={{backgroundImage: `url('${image001}')`}}/>
           </div>
           <div className="banner__image-wrap banner__image-mobile ">
-            <div className="banner__image"
-                 style={{backgroundImage: 'url(https://www.urbanicathehotels.com/wp-content/uploads/2018/08/unnamed-1.jpg)'}}/>
+            <div className="banner__image" style={{backgroundImage: `url('${image001}')`}}/>
           </div>
         </div>
         <div className="section">
@@ -35,8 +35,7 @@ const LoftRoom = () => (
               <p><span>Sitting atop The Meridian, The Terrace Rooms are our exclusive villa style units that come complete with large private Terraces that boast views of South Beach and our surrounding lush neighborhood.<br/>
                 Your space is designed with natural elements including a natural oak desk &amp; personal espresso machine, a walk-in shower and C.O. Bigelow bath products.<br/>
               </span></p>
-              <a href="#"
-                className="btn btn--hvr-fade" target="_self">RESERVE</a>
+              <a href="#" className="btn btn--hvr-fade" target="_self">RESERVE</a>
             </div>
             <div className="col-40 valign-top">
               <div className="bulleted-list ">

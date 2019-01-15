@@ -121,7 +121,7 @@ class Footer extends Component {
             </ul>
             <div className="footer__copyright">
               <p className="footer__copyright--original active">Zenith Dakhla <span>© 2019</span></p>
-              <p className="footer__copyright--hover">by <a href="https://brolopers.com/" target="_blank" rel="noopener noreferrer">Brolopers</a>
+              <p className="footer__copyright--hover">by <a href="https://uk.linkedin.com/in/markrivelles" target="_blank" rel="noopener noreferrer">Brolopers</a>
               </p>
             </div>
           </div>
