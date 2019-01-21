@@ -52,7 +52,7 @@ const FoodMarchand = () => (
                 </li>
               </ul>
             </div>
-            <div className="content-subnav__nav content-subnav__nav--mobile fadein-slideready">
+            <div className="content-subnav__nav content-subnav__nav--mobile fadein-slideready fadein-slideup">
               <div className="content-subnav__filter-select">
                 <div className="content-subnav__filter-selected">Overview</div>
                 <div className="content-subnav__select">

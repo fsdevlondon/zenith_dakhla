@@ -1,8 +1,8 @@
 import React from 'react';
-import Spherical0447 from '../../assets/img/Spherical-Urbanica-0447.jpg';
-import Spherical0448 from '../../assets/img/Spherical-Urbanica-9593.jpg';
-import Spherical0509 from '../../assets/img/Spherical-Urbanica-0509-1.jpg';
-import Spherical0510 from '../../assets/img/Spherical-Urbanica-0614.jpg';
+import Spherical0447 from '../../assets/img/footable.jpg';
+import Spherical0448 from '../../assets/img/pool-vertical-min.jpg';
+import Spherical0509 from '../../assets/img/drone-villas.jpg';
+import Spherical0510 from '../../assets/img/kite-core.jpg';
 import amapaLogo from '../../assets/img/hotel_amapa_logo.png';
 
 const TwinSlider = () => (
@@ -60,12 +60,10 @@ const TwinSlider = () => (
         </div>
         <div className="owl-dots disabled"/>
       </div>
-
-
     </div>
 
     <div className="twin-slider__right fadein-slideready fadein-slideup">
-      <div className="twin-slider__right-logo fadein-slideready">
+      <div className="twin-slider__right-logo fadein-slideready fadein-slideup">
         <img src={amapaLogo} alt="logo"/>
       </div>
 

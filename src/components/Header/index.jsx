@@ -2,7 +2,7 @@ import React, { Fragment, Component } from 'react';
 import { Link } from 'react-router-dom';
 import NavHam from './components/NavHam';
 import { Nav, NavLogo, NavLogoImg, NavReserve, ReserveBtn } from './wrappers';
-import logo from '../../assets/zenith_big_logo.png';
+import logo from '../../assets/img/zenith_big_logo.jpg';
 import NavSlider from '../NavSlider';
 
 class NavHeader extends Component {
@@ -21,7 +21,7 @@ class NavHeader extends Component {
           </NavLogo>
 
           <NavReserve>
-            <ReserveBtn>Reserve Now</ReserveBtn>
+            <ReserveBtn className="hotelRunnerReserveBtn">Reserve Now</ReserveBtn>
           </NavReserve>
 
           <NavHam openMenu={this.state.isOpen} onClick={() => { this.setState({ isOpen: !this.state.isOpen })}}/>

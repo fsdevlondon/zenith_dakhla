@@ -1,7 +1,7 @@
 import React from 'react';
 import Spherical0297 from '../../assets/img/Spherical-Urbanica-0297.jpg';
-import Spherical0298 from '../../assets/img/Spherical-Urbanica-Hotels-Meridian-South-Beach_pool-cabana_01.jpg';
-import Spherical0299 from '../../assets/img/Spherical-Urbanica-Hotels-Meridian-South-Beach_Front-Desk_01B.jpg';
+import Spherical0298 from '../../assets/img/villa-night.jpg';
+import Spherical0299 from '../../assets/img/hamman-reception.jpg';
 
 const SectionBoking = () => (
   <div className="content-images-booking">
@@ -23,23 +23,15 @@ const SectionBoking = () => (
             <span>We've got a room and a good time waiting...</span>
           </div>
 
-          <div className="booking-widget__wrap">
-            <form className="booking-widget__form">
-              <input type="hidden" id="inline_reserve_arrive" name="arrive"/>
-              <input type="hidden" id="inline_reserve_depart" name="depart"/>
-            </form>
+          <div className="content-images-booking__btn">
+            <button className="btn hotelRunnerReserveBtn">Reserve</button>
           </div>
 
         </div>
       </div>
 
       <div className="content-images-booking__btn mobile">
-        <form className="booking-widget__form" >
-          <input type="hidden" id="inline_reserve_arrive" name="arrive"/>
-          <input type="hidden" id="inline_reserve_depart" name="depart"/>
-          <input id="book_locale" type="hidden" name="locale" value="en-US"/>
-          <button className="btn" type="submit">Reserve</button>
-        </form>
+        <button className="btn hotelRunnerReserveBtn">Reserve</button>
       </div>
 
     </div>
@@ -55,9 +47,9 @@ const SectionBoking = () => (
         <img className="img-mobile" src={Spherical0298} alt="spherical" />
       </div>
 
-      <div className="content-images-booking__img-3 fadein-slideready">
-        <img className="img-desktop" src={Spherical0299} alt="spherical-urbanica-hotels-meridian-south-beach_front-desk_01b" />
-        <img className="img-mobile" src={Spherical0299} alt="spherical-urbanica-hotels-meridian-south-beach_front-desk_01b" />
+      <div className="content-images-booking__img-3 fadein-slideready fadein-slideup">
+        <img className="img-desktop" src={Spherical0299} alt="spherical" />
+        <img className="img-mobile" src={Spherical0299} alt="spherical" />
       </div>
     </div>
   </div>

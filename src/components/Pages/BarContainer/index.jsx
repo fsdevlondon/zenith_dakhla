@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import NavHeader from '../../Header';
 import Footer from '../../Footer';
-import Spherical001 from '../../../assets/img/Spherical-Urbanica-0058.jpg'; //https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0058.jpg
-import Spherical002 from '../../../assets/img/Spherical-Urbanica-0509-e1534557790516.jpg'; //https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0509-e1534557790516.jpg
+import Spherical001 from '../../../assets/img/Spherical-Urbanica-0058.jpg';
+import Spherical002 from '../../../assets/img/Spherical-Urbanica-0509-e1534557790516.jpg';
 
 const BarContainer = () => (
   <Fragment>

@@ -1,377 +1,155 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, Component } from 'react';
 import { Link } from 'react-router-dom';
 import NavHeader from '../../Header';
 import Footer from '../../Footer';
-import imageRoom001 from '../../../assets/img/Spherical-Urbanica-0182-small.png';
+import imageRoom001 from '../../../assets/img/loft-out.jpg';
+import imageRoom002 from '../../../assets/img/villas-out2.jpg';
+import imageRoom003 from '../../../assets/img/riad-in.jpg';
 
 
-const RoomsContainer = () => (
-  <Fragment>
-    <NavHeader />
-    <div className="wrapper__background-pattern"/>
-    <div className="nav-block"/>
-    <div className="section section--background-left">
-      <div className="intro-content  fadein-slideready fadein-slideup">
-        <h2 className="intro-content__subtitle"/>
-        <h1 className="intro-content__title">Our Rooms </h1>
-        <div className="intro-content__content ">
-          <div className="two-column">
-            <p>All rooms feature natural wood elements that stand out against a white palate, creating the feeling of
-              Miami at the beach. Our beds are truly the centerpiece of every room, and its comfort is one of our best
-              amenities. The rooms are thoughtfully designed in a simple clean and modern style, and we’ve included all
-              the comforts of home and something more.</p>
-          </div>
-        </div>
-      </div>
-      <div className="photo-content ">
-        <div className="photo-content__container ">
-          <div className="photo-content__item    photo-content__item--right fadein-slideready fadein-slideup" data-time="">
-            <div className="photo-content__content-block photo-content__content-block--left">
-              <span className="photo-content__subtitle">Just Like Home</span>
-              <span className="photo-content__title">The Loft</span>
-              <p>Sitting atop The Meridian, The Terrace Rooms are our exclusive villa style units that come complete
-                with large private Terraces that boast views of South Beach and our surrounding lush neighborhood…</p>
-              <div className="photo-content__links">
-                <div className="photo-content__link">
-                  <Link to="/rooms/the-terrace" className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></Link>
-                </div>
-                <div className="photo-content__link">
-                  <a href="" className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
-                </div>
-              </div>
-            </div>
-            <div className="photo-content__imglist">
-              <div className="photo-content__img">
-                <img className="img-desktop"
-                     src={imageRoom001}
-                     alt="spherical-0182-small"/>
-                <img className="img-mobile"
-                     src={imageRoom001}
-                     alt="spherical-0182-small"/>
-              </div>
-            </div>
+class RoomsContainer extends Component {
+  componentDidMount() {
+    if (window) {
+      window.addBtnReseve();
+      window.scrollTo(0,0);
+    }
+  }
 
-            <div className="photo-content__content-block photo-content__content-block--right">
-              <span className="photo-content__subtitle">Just Like Home</span>
-              <span className="photo-content__title">The Terrace</span>
-              <p>Sitting atop The Meridian, The Terrace Rooms are our exclusive villa style units that come complete
-                with large private Terraces that boast views of South Beach and our surrounding lush neighborhood…</p>
-              <div className="photo-content__links">
-                <div className="photo-content__link">
-                  <Link to="/rooms/the-terrace" className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></Link>
-                </div>
-                <div className="photo-content__link">
-                  <a href="" className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
-                </div>
+  render() {
+    return (
+      <Fragment>
+        <NavHeader/>
+        <div className="wrapper__background-pattern"/>
+        <div className="nav-block"/>
+        <div className="section section--background-left">
+          <div className="intro-content  fadein-slideready fadein-slideup">
+            <h2 className="intro-content__subtitle"/>
+            <h1 className="intro-content__title">Our Rooms </h1>
+            <div className="intro-content__content ">
+              <div className="two-column">
+                <p>All rooms feature natural wood elements that stand out against a white palate, creating the feeling
+                  of
+                  Miami at the beach. Our beds are truly the centerpiece of every room, and its comfort is one of our
+                  best
+                  amenities. The rooms are thoughtfully designed in a simple clean and modern style, and we’ve included
+                  all
+                  the comforts of home and something more.</p>
               </div>
             </div>
           </div>
+          <div className="photo-content ">
+            <div className="photo-content__container ">
+              <div className="photo-content__item    photo-content__item--right fadein-slideready fadein-slideup"
+                   data-time="">
+                <div className="photo-content__content-block photo-content__content-block--right">
+                  <span className="photo-content__subtitle">Just Like Home</span>
+                  <span className="photo-content__title">The Loft</span>
+                  <p>Loft room is actually a little understated for what we have built in Dakhla. These are not only rooms, but rather absolute luxury loft apartments with two rooms and a large bathroom including an outside area.</p>
+                  <p>Start your kitesurfing day relaxed and check out the wind and the spot from your giant double bed. Afterwards or after your session on the lagoon you can enjoy your very own Jacuzzi. You have read correctly. Not one Jacuzzi for all loft rooms, but each apartment has its own Jacuzzi. Pure luxury!</p>
+                  <div className="photo-content__links">
+                    <div className="photo-content__link">
+                      <Link to="/rooms/loft-room" className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></Link>
+                    </div>
+                    <div className="photo-content__link">
+                      <div className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom hotelRunnerReserveBtn"><span>RESERVE</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="photo-content__imglist">
+                  <div className="photo-content__img">
+                    <img className="img-desktop"
+                         src={imageRoom001}
+                         alt="spherical-0182-small"/>
+                    <img className="img-mobile"
+                         src={imageRoom001}
+                         alt="spherical-0182-small"/>
+                  </div>
+                </div>
+              </div>
 
-          <div className="photo-content__item    photo-content__item--left fadein-slideready" data-time="">
-            <div className="photo-content__content-block photo-content__content-block--left">
-              <span className="photo-content__subtitle">Just Like Home</span>
-              <span className="photo-content__title">Club </span>
-              <p>Start with views of Miami Beach from your private balcony and then retreat to this beautiful 360 sqft
-                space that boasts an extremely comfortable king-size that features fine cotton sheets and exquisitely
-                comfortable pillows. The bathroom has a spacious walk-in shower and luxury bath products by C.O.
-                Bigelow.</p>
-              <div className="photo-content__links">
-                <div className="photo-content__link">
-                  <a href="https://www.urbanicathehotels.com/the-meridian/rooms/club/"
-                     className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></a>
-                </div>
-                <div className="photo-content__link">
-                  <a
-                    href="https://be.synxis.com/?adult=1&amp;arrive=2018-11-01&amp;chain=24140&amp;child=0&amp;currency=USD&amp;depart=2018-11-02&amp;hotel=5108&amp;level=hotel&amp;locale=en-US&amp;rooms=1&amp;sbe_ri=0"
-                    className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
-                </div>
-              </div>
-            </div>
-            <div className="photo-content__imglist">
-              <div className="photo-content__img">
-                <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-Hotels-Meridian-South-Beach_Suite-Room_01B.jpg"
-                     alt="spherical-urbanica-hotels-meridian-south-beach_suite-room_01b"/>
-                <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-Hotels-Meridian-South-Beach_Suite-Room_01B.jpg"
-                     alt="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-Hotels-Meridian-South-Beach_Suite-Room_01B.jpg"/>
-              </div>
-            </div>
-            <div className="photo-content__content-block photo-content__content-block--right">
-              <span className="photo-content__subtitle">Just Like Home</span>
-              <span className="photo-content__title">Club </span>
-              <p>Start with views of Miami Beach from your private balcony and then retreat to this beautiful 360 sqft
-                space that boasts an extremely comfortable king-size that features fine cotton sheets and exquisitely
-                comfortable pillows. The bathroom has a spacious walk-in shower and luxury bath products by C.O.
-                Bigelow.</p>
 
-              <div className="photo-content__links">
-                <div className="photo-content__link">
-                  <a href="https://www.urbanicathehotels.com/the-meridian/rooms/club/"
-                     className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></a>
+              <div className="photo-content__item    photo-content__item--right fadein-slideready fadein-slideup"
+                   data-time="">
+                <div className="photo-content__imglist">
+                  <div className="photo-content__img">
+                    <img className="img-desktop"
+                         src={imageRoom002}
+                         alt="spherical-0182-small"/>
+                    <img className="img-mobile" style={{marginTop: '40px'}}
+                         src={imageRoom002}
+                         alt="spherical-0182-small"/>
+                  </div>
                 </div>
-                <div className="photo-content__link">
-                  <a
-                    href="https://be.synxis.com/?adult=1&amp;arrive=2018-11-01&amp;chain=24140&amp;child=0&amp;currency=USD&amp;depart=2018-11-02&amp;hotel=5108&amp;level=hotel&amp;locale=en-US&amp;rooms=1&amp;sbe_ri=0"
-                    className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
+                <div className="photo-content__content-block photo-content__content-block--right">
+                  <span className="photo-content__subtitle">Just Like Home</span>
+                  <span className="photo-content__title">The Villa</span>
+                  <p>The six mini villas are lined up just next to each other. Thanks to fascinating architecture all
+                    bedrooms and terraces offer you a view to the lagoon without having your privacy disturbed.</p>
+                  <p>The mini villas consist of a very ample bedroom, which, based on request, can be equipped with
+                    different beds; a double bed with a comfortable 160cm wide mattress, an additional large single
+                    bed for triple occupancy or two single beds to create a twin room. A writing desk with cupboards
+                    and bedside tables makes your bedroom complete.<br/>
+                    In the back part of the villas you will find a spacious shower and a second room with the WC.
+                    Behind this is a dressing room with two separate sinks and trays.<br/>
+                    The absolute highlight is the additional, roofless outside bathing area with a large bathtub and a
+                    rainforest shower.</p>
+                  <div className="photo-content__links">
+                    <div className="photo-content__link">
+                      <Link to="/rooms/villa-room" className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></Link>
+                    </div>
+                    <div className="photo-content__link">
+                      <div className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom hotelRunnerReserveBtn"><span>RESERVE</span></div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div className="photo-content__item    photo-content__item--right fadein-slideready" data-time="">
-            <div className="photo-content__content-block photo-content__content-block--left">
-              <span className="photo-content__subtitle">Just Like Home</span>
-              <span className="photo-content__title">Club 2 Full </span>
-              <p>Relax in 360 square feet of space complete with 2 full beds with cotton bedding &amp; custom furniture.
-                Take care of business at our custom natural oak desk with cushioned side chair, keep your valuables
-                secure in the laptop safe, personal espresso machine and take in the fresh Miami Beach air while you
-                enjoy your own private balcony. Additional amenities designed to make your stay beyond the ordinary
-                include a walk-in shower and C.O. Bigelow bath products.</p>
-              <div className="photo-content__links">
-                <div className="photo-content__link">
-                  <a href="https://www.urbanicathehotels.com/the-meridian/rooms/club-2-full/"
-                     className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></a>
+              <div className="photo-content__item    photo-content__item--right fadein-slideready fadein-slideup"
+                   data-time="">
+                <div className="photo-content__content-block photo-content__content-block--right">
+                  <span className="photo-content__subtitle">Just Like Home</span>
+                  <span className="photo-content__title">The Riad</span>
+                  <p>Besides the mini villas, we have built a new Riad for you. A Riad is a small townhouse built
+                    mainly for wealthy families. We used this construction type and converted it into a hotel. Here
+                    you will stay with Kitesurfers from all over the world, creating a very special atmosphere. It has
+                    been decorated&nbsp;with lots of love and with a Moroccan feel and charm, from the&nbsp;smoothly
+                    plastered sand colored walls and the warm lighting .</p>
+                  <p>It is a building consisting of one floor with&nbsp;6 rooms built around a courtyard.Each room has
+                    its own ensuite bathroom. They are situated behind a partition wall with a spacious shower.<br/>
+                    The rooms are smaller than the mini villas, but still with ample space for you and your
+                    belongings.<br/>
+                    In the middle of the Riad you will find a big open court with a lot of plants, where you can
+                    relax and recuperate after a day on the water. &nbsp;This is a great value alternative to the mini
+                    villas</p>
+                  <div className="photo-content__links">
+                    <div className="photo-content__link">
+                      <Link to="/rooms/riad-room" className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></Link>
+                    </div>
+                    <div className="photo-content__link">
+                      <div className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom hotelRunnerReserveBtn"><span>RESERVE</span></div>
+                    </div>
+                  </div>
                 </div>
-                <div className="photo-content__link">
-                  <a href="https://be.synxis.com/?adult=1&amp;arrive=2018-11-01&amp;chain=24140&amp;child=0&amp;currency=USD&amp;depart=2018-11-02&amp;hotel=5108&amp;level=hotel&amp;locale=en-US&amp;rooms=1&amp;sbe_ri=0"
-                    className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
-                </div>
-              </div>
-            </div>
-            <div className="photo-content__imglist">
-              <div className="photo-content__img">
-                <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-9924.jpg"
-                     alt="spherical-urbanica-9924"/>
-                <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-9924.jpg"
-                     alt="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-9924.jpg"/>
-              </div>
-            </div>
-
-            <div className="photo-content__content-block photo-content__content-block--right">
-              <span className="photo-content__subtitle">Just Like Home</span>
-              <span className="photo-content__title">Club 2 Full </span>
-              <p>Relax in 360 square feet of space complete with 2 full beds with cotton bedding &amp; custom furniture.
-                Take care of business at our custom natural oak desk with cushioned side chair, keep your valuables
-                secure in the laptop safe, personal espresso machine and take in the fresh Miami Beach air while you
-                enjoy your own private balcony. Additional amenities designed to make your stay beyond the ordinary
-                include a walk-in shower and C.O. Bigelow bath products.</p>
-              <div className="photo-content__links">
-                <div className="photo-content__link">
-                  <a href="https://www.urbanicathehotels.com/the-meridian/rooms/club-2-full/"
-                     className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></a>
-                </div>
-                <div className="photo-content__link">
-                  <a href="https://be.synxis.com/?adult=1&amp;arrive=2018-11-01&amp;chain=24140&amp;child=0&amp;currency=USD&amp;depart=2018-11-02&amp;hotel=5108&amp;level=hotel&amp;locale=en-US&amp;rooms=1&amp;sbe_ri=0"
-                    className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="photo-content__item    photo-content__item--left fadein-slideready" data-time="">
-            <div className="photo-content__content-block photo-content__content-block--left">
-              <span className="photo-content__subtitle">Just Like Home</span>
-              <span className="photo-content__title">Grand Room</span>
-              <p>This room is 330 sqft of Grand space. Roomier than our standard it offers spacious comfort, comfortable
-                king-size beds that are draped in fine quality linens, a stark white palatte highlights the natural wood
-                furniture. The bathroom features luxury bath products and a large glass enclosed walk-in shower.</p>
-              <div className="photo-content__links">
-                <div className="photo-content__link">
-                  <a href="https://www.urbanicathehotels.com/the-meridian/rooms/grand/"
-                     className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></a>
-                </div>
-                <div className="photo-content__link">
-                  <a href="https://be.synxis.com/?adult=1&amp;arrive=2018-11-01&amp;chain=24140&amp;child=0&amp;currency=USD&amp;depart=2018-11-02&amp;hotel=5108&amp;level=hotel&amp;locale=en-US&amp;rooms=1&amp;sbe_ri=0"
-                    className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
-                </div>
-              </div>
-            </div>
-            <div className="photo-content__imglist">
-              <div className="photo-content__img">
-                <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-Hotels-Meridian-South-Beach_Grand-Room_01B-1.jpg"
-                     alt="spherical-urbanica-hotels-meridian-south-beach_grand-room_01b-2"/>
-                <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-Hotels-Meridian-South-Beach_Grand-Room_01B-2.jpg"
-                     alt="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-Hotels-Meridian-South-Beach_Grand-Room_01B-2.jpg"/>
-              </div>
-            </div>
-
-            <div className="photo-content__content-block photo-content__content-block--right">
-              <span className="photo-content__subtitle">Just Like Home</span>
-              <span className="photo-content__title">Grand Room</span>
-              <p>This room is 330 sqft of Grand space. Roomier than our standard it offers spacious comfort, comfortable
-                king-size beds that are draped in fine quality linens, a stark white palatte highlights the natural wood
-                furniture. The bathroom features luxury bath products and a large glass enclosed walk-in shower.</p>
-              <div className="photo-content__links">
-                <div className="photo-content__link">
-                  <a href="https://www.urbanicathehotels.com/the-meridian/rooms/grand/"
-                     className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></a>
-                </div>
-                <div className="photo-content__link">
-                  <a href="https://be.synxis.com/?adult=1&amp;arrive=2018-11-01&amp;chain=24140&amp;child=0&amp;currency=USD&amp;depart=2018-11-02&amp;hotel=5108&amp;level=hotel&amp;locale=en-US&amp;rooms=1&amp;sbe_ri=0"
-                    className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="photo-content__item    photo-content__item--right fadein-slideready" data-time="">
-            <div className="photo-content__content-block photo-content__content-block--left">
-              <span className="photo-content__subtitle">Just Like Home</span>
-              <span className="photo-content__title">Grand 2 Queen</span>
-              <p>This other grand space features all the comforts and amenities as the Standard Grand but can
-                accommodate four with two queen size beds. The room is set in 350 sq. ft. The bathroom is spacious and
-                comfortable with a glass enclosed walk-in shower and luxury bath products.</p>
-              <div className="photo-content__links">
-                <div className="photo-content__link">
-                  <a href="https://www.urbanicathehotels.com/the-meridian/rooms/grand-2-queen/"
-                     className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></a>
-                </div>
-                <div className="photo-content__link">
-                  <a href="https://be.synxis.com/?adult=1&amp;arrive=2018-11-01&amp;chain=24140&amp;child=0&amp;currency=USD&amp;depart=2018-11-02&amp;hotel=5108&amp;level=hotel&amp;locale=en-US&amp;rooms=1&amp;sbe_ri=0"
-                    className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
-                </div>
-              </div>
-            </div>
-            <div className="photo-content__imglist">
-              <div className="photo-content__img">
-                <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0125.jpg"
-                     alt="spherical-urbanica-0125-2"/>
-                <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0125.jpg"
-                     alt="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0125.jpg"/>
-              </div>
-            </div>
-            <div className="photo-content__content-block photo-content__content-block--right">
-              <span className="photo-content__subtitle">Just Like Home</span>
-              <span className="photo-content__title">Grand 2 Queen</span>
-              <p>This other grand space features all the comforts and amenities as the Standard Grand but can
-                accommodate four with two queen size beds. The room is set in 350 sq. ft. The bathroom is spacious and
-                comfortable with a glass enclosed walk-in shower and luxury bath products.</p>
-              <div className="photo-content__links">
-                <div className="photo-content__link">
-                  <a href="https://www.urbanicathehotels.com/the-meridian/rooms/grand-2-queen/"
-                     className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></a>
-                </div>
-                <div className="photo-content__link">
-                  <a href="https://be.synxis.com/?adult=1&amp;arrive=2018-11-01&amp;chain=24140&amp;child=0&amp;currency=USD&amp;depart=2018-11-02&amp;hotel=5108&amp;level=hotel&amp;locale=en-US&amp;rooms=1&amp;sbe_ri=0"
-                    className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="photo-content__item    photo-content__item--left fadein-slideready" data-time="">
-            <div className="photo-content__content-block photo-content__content-block--left">
-              <span className="photo-content__subtitle">Just Like Home</span>
-              <span className="photo-content__title">Standard</span>
-              <p>260 sq ft make this room ideal for a beach getaway or a full proper vacation.<br/>
-                It is designed with Miami Beach in mind. Natural wood elements throughout including the finest bedding
-                with quality cotton linens &amp; a minifridge for your beverages &amp; snacks make the room feel more
-                like home. The bathroom features C.O.Bigelow bath products, and a modern glass walk-in shower.</p>
-              <div className="photo-content__links">
-                <div className="photo-content__link">
-                  <a href="https://www.urbanicathehotels.com/the-meridian/rooms/standard/"
-                     className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></a>
-                </div>
-                <div className="photo-content__link">
-                  <a href="https://be.synxis.com/?adult=1&amp;arrive=2018-11-01&amp;chain=24140&amp;child=0&amp;currency=USD&amp;depart=2018-11-02&amp;hotel=5108&amp;level=hotel&amp;locale=en-US&amp;rooms=1&amp;sbe_ri=0"
-                    className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
-                </div>
-              </div>
-            </div>
-            <div className="photo-content__imglist">
-              <div className="photo-content__img">
-                <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-9856small.png"
-                     alt="spherical-urbanica-9856small-2"/>
-                <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-9856small.png"
-                     alt="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-9856small.png"/>
-              </div>
-            </div>
-
-            <div className="photo-content__content-block photo-content__content-block--right">
-              <span className="photo-content__subtitle">Just Like Home</span>
-              <span className="photo-content__title">Standard</span>
-              <p>260 sq ft make this room ideal for a beach getaway or a full proper vacation.<br/>
-                It is designed with Miami Beach in mind. Natural wood elements throughout including the finest bedding
-                with quality cotton linens &amp; a minifridge for your beverages &amp; snacks make the room feel more
-                like home. The bathroom features C.O.Bigelow bath products, and a modern glass walk-in shower.</p>
-              <div className="photo-content__links">
-                <div className="photo-content__link">
-                  <a href="https://www.urbanicathehotels.com/the-meridian/rooms/standard/"
-                     className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></a>
-                </div>
-                <div className="photo-content__link">
-                  <a href="https://be.synxis.com/?adult=1&amp;arrive=2018-11-01&amp;chain=24140&amp;child=0&amp;currency=USD&amp;depart=2018-11-02&amp;hotel=5108&amp;level=hotel&amp;locale=en-US&amp;rooms=1&amp;sbe_ri=0"
-                    className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="photo-content__item    photo-content__item--right fadein-slideready" data-time="">
-            <div className="photo-content__content-block photo-content__content-block--left">
-              <span className="photo-content__subtitle">Just Like Home</span>
-              <span className="photo-content__title">Mini </span>
-              <p>This is our quaintest room. It’s petite setting is perfect for those looking for a Pied-a-terre or just
-                to simply enjoy all the luxury and amenities that The Meridian Hotel has to offer but on a shoestring
-                budget in a shobox chic setting. This room still offers, the most comfortable bed with fine cotton
-                linens, a spacious bathroom with a walk-in shower and luxurious bath products.</p>
-              <div className="photo-content__links">
-                <div className="photo-content__link">
-                  <a href="https://www.urbanicathehotels.com/the-meridian/rooms/mini/"
-                     className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></a>
-                </div>
-                <div className="photo-content__link">
-                  <a href="https://be.synxis.com/?adult=1&amp;arrive=2018-11-01&amp;chain=24140&amp;child=0&amp;currency=USD&amp;depart=2018-11-02&amp;hotel=5108&amp;level=hotel&amp;locale=en-US&amp;rooms=1&amp;sbe_ri=0"
-                    className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
-                </div>
-              </div>
-            </div>
-            <div className="photo-content__imglist">
-              <div className="photo-content__img">
-                <img className="img-desktop"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-Hotels-Meridian-South-Beach_Mini-Room_01B.jpg"
-                     alt="spherical-urbanica-hotels-meridian-south-beach_mini-room_01b"/>
-                <img className="img-mobile"
-                     src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-Hotels-Meridian-South-Beach_Mini-Room_01B.jpg"
-                     alt="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-Hotels-Meridian-South-Beach_Mini-Room_01B.jpg"/>
-              </div>
-            </div>
-
-            <div className="photo-content__content-block photo-content__content-block--right">
-              <span className="photo-content__subtitle">Just Like Home</span>
-              <span className="photo-content__title">Mini </span>
-              <p>This is our quaintest room. It’s petite setting is perfect for those looking for a Pied-a-terre or just
-                to simply enjoy all the luxury and amenities that The Meridian Hotel has to offer but on a shoestring
-                budget in a shobox chic setting. This room still offers, the most comfortable bed with fine cotton
-                linens, a spacious bathroom with a walk-in shower and luxurious bath products.</p>
-              <div className="photo-content__links">
-                <div className="photo-content__link">
-                  <a href="https://www.urbanicathehotels.com/the-meridian/rooms/mini/"
-                     className="btn btn--plain btn--text-black valign-bottom"><span>VIEW MORE</span></a>
-                </div>
-                <div className="photo-content__link">
-                  <a href="https://be.synxis.com/?adult=1&amp;arrive=2018-11-01&amp;chain=24140&amp;child=0&amp;currency=USD&amp;depart=2018-11-02&amp;hotel=5108&amp;level=hotel&amp;locale=en-US&amp;rooms=1&amp;sbe_ri=0"
-                    className="btn btn--highlight btn--hvr-sweep-to-right btn--text-black valign-bottom"><span>RESERVE</span></a>
+                <div className="photo-content__imglist">
+                  <div className="photo-content__img">
+                    <img className="img-desktop"
+                         src={imageRoom003}
+                         alt="spherical-0182-small"/>
+                    <img className="img-mobile" style={{marginTop: '40px'}}
+                         src={imageRoom003}
+                         alt="spherical-0182-small"/>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div className="nav-block"/>
-    <Footer/>
-  </Fragment>
-);
+        <div className="nav-block"/>
+        <Footer/>
+      </Fragment>
+    );
+  }
+}
 
 export default RoomsContainer;
 

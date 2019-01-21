@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/zenith_big_logo.png';
+import logo from '../../assets/img/zenith_big_logo.jpg';
 
 class Footer extends Component {
   constructor(props) {
@@ -37,7 +37,7 @@ class Footer extends Component {
 
   render() {
     return (
-      <div className="footer fadein-slideready">
+      <div className="footer fadein-slideready fadein-slideup">
         <div className="instagram">
           <div id="instagram__list" className="instagram__list instagram-carousel owl-carousel owl-loaded">
             <div className="owl-stage-outer">
@@ -88,7 +88,7 @@ class Footer extends Component {
 
           <div className="footer__contact-info">
             <p>Zenith Dakhla<br/>
-              zenith.dakhla@gmail.com<br/>
+              book@zenith-dakhla.com<br/>
               +212 653-624584<br/>
               Pk 27 km Al Argoub<br/>
               73000 Dakhla, Morocco</p>
@@ -99,7 +99,7 @@ class Footer extends Component {
           <div className="footer__menu">
             <ul id="menu-meridian-footer-menu" className="">
               <li id="menu-item-868" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-868">
-                <Link to="/contact" className="animsition-link">CONTACT</Link>
+                <Link to="/" className="animsition-link">CONTACT</Link>
               </li>
               <li id="menu-item-2467" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2467">
                 <Link to="/" className="animsition-link">The Resorts</Link>

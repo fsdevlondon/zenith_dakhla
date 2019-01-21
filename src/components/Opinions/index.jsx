@@ -17,6 +17,7 @@ const Opinions = () => (
               </div>
             </div>
           </div>
+          /*
           <div className="owl-item cloned" style={{width: '520px'}}>
             <div className="tripadvisor-slider__item">
               <div className="tripadvisor-slider__quote">
@@ -61,6 +62,7 @@ const Opinions = () => (
               </div>
             </div>
           </div>
+          */
         </div>
       </div>
       <div className="owl-nav disabled">
@@ -68,6 +70,7 @@ const Opinions = () => (
         </button>
         <button type="button" role="presentation" className="owl-next"><span aria-label="Next">›</span></button>
       </div>
+
       <div className="owl-dots disabled">
         <button className="owl-dot active"><span /></button>
       </div>

@@ -1,6 +1,17 @@
 import React, { Fragment } from 'react';
 import NavHeader from '../../Header';
 import Footer from '../../Footer';
+import Spherical001 from '../../../assets/img/Spherical-Urbanica-9593-1.jpg';
+import Spherical002 from '../../../assets/img/Spherical-Urbanica-0234.jpg';
+import Spherical003 from '../../../assets/img/Spherical-Urbanica-0071.jpg';
+import Spherical004 from '../../../assets/img/Spherical-Urbanica-9642-small.png';
+import Spherical005 from '../../../assets/img/Spherical-Urbanica-0563-e1539553484790.jpg';
+import Spherical006 from '../../../assets/img/Spherical-Urbanica-0616-e1539588109901.jpg';
+import Spherical007 from '../../../assets/img/DSC_53329small.jpg';
+import Spherical008 from '../../../assets/img/Brand-Home_Image-1-1-e1539588254127.jpg';
+import Spherical009 from '../../../assets/img/Spherical-Urbanica-0447-small-e1539588160877.png';
+import Spherical010 from '../../../assets/img/Spherical-Urbanica-9991-e1539117553769.jpg';
+import Spherical011 from '../../../assets/img/Spherical-Urbanica-0418-e1539588427506.jpg';
 
 const AboutContainer = () => (
   <Fragment>
@@ -23,16 +34,16 @@ const AboutContainer = () => (
           <div className="step-imagecon__images fadein-slideready fadein-slideup">
             <div className="step-imagecon__container">
               <div className="step-imagecon__imagebox" style={{marginTop: '-137.8px'}}>
-                <img src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-9593-1.jpg"
+                <img src={{Spherical001}}
                      alt="spherical-urbanica-9593-2"/>
               </div>
               <div className="step-imagecon__imagebox">
-                <img src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0234.jpg"
+                <img src={{Spherical002}}
                      alt="spherical-urbanica-0234"/>
               </div>
               <div className="step-imagecon__imagebox" style={{marginTop: '103.35px'}}>
-                <img src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0071.jpg"
-                     alt="spherical-urbanica-0071"/>
+                <img src={{Spherical003}}
+                alt="spherical-urbanica-0071"/>
               </div>
               <div className="clear"/>
             </div>
@@ -52,38 +63,38 @@ const AboutContainer = () => (
             <div className="flexim-slider__container" style={{width: '4123.47px'}}>
               <div className="flexim-slider__imagebox">
                 <img
-                  src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-9642-small.png"
+                  src={{Spherical004}}
                   alt="spherical-urbanica-9642-small"/>
               </div>
               <div className="flexim-slider__imagebox">
                 <img
-                  src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0563-e1539553484790.jpg"
+                  src={{Spherical005}}
                   alt="spherical-urbanica-0563"/>
               </div>
               <div className="flexim-slider__imagebox">
                 <img
-                  src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0616-e1539588109901.jpg"
+                  src={{Spherical006}}
                   alt="spherical-urbanica-0616"/>
               </div>
               <div className="flexim-slider__imagebox">
-                <img src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/DSC_53329small.jpg"
+                <img src={{Spherical007}}
                      alt="dsc_53329small"/>
               </div>
               <div className="flexim-slider__imagebox">
                 <img
-                  src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Brand-Home_Image-1-1-e1539588254127.jpg"
+                  src={{Spherical008}}
                   alt="brand-home_image-1-2"/>
               </div>
               <div className="flexim-slider__imagebox">
                 <img
-                  src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0447-small-e1539588160877.png"
+                  src={{Spherical009}}
                   alt="spherical-urbanica-0447-small"/>
               </div>
 
             </div>
           </div>
         </div>
-        <div className="flexim-slider flexim-slider--mobile fadein-slideready">
+        <div className="flexim-slider flexim-slider--mobile fadein-slideready fadein-slideup">
           <div className="flexim-slider__boxxy">
             <div className="flexim-slider__container flexim-slider__container-js slick-initialized slick-slider">
               <div className="slick-list draggable">
@@ -92,7 +103,7 @@ const AboutContainer = () => (
                     <div>
                       <div className="flexim-slider__imagebox" style={{width: '100%', display: 'inline-block'}}>
                         <img
-                          src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0447-small-e1539588160877.png"
+                          src={{Spherical009}}
                           alt="spherical-urbanica-0447-small"/>
                       </div>
                     </div>
@@ -101,7 +112,7 @@ const AboutContainer = () => (
                     <div>
                       <div className="flexim-slider__imagebox" style={{width: '100%', display: 'inline-block'}}>
                         <img
-                          src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-9642-small.png"
+                          src={{Spherical004}}
                           alt="spherical-urbanica-9642-small"/>
                       </div>
                     </div>
@@ -110,7 +121,7 @@ const AboutContainer = () => (
                     <div>
                       <div className="flexim-slider__imagebox" style={{width: '100%', display: 'inline-block'}}>
                         <img
-                          src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0563-e1539553484790.jpg"
+                          src={{Spherical005}}
                           alt="spherical-urbanica-0563"/>
                       </div>
                     </div>
@@ -119,7 +130,7 @@ const AboutContainer = () => (
                     <div>
                       <div className="flexim-slider__imagebox" style={{width: '100%', display: 'inline-block'}}>
                         <img
-                          src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0616-e1539588109901.jpg"
+                          src={{Spherical006}}
                           alt="spherical-urbanica-0616"/>
                       </div>
                     </div>
@@ -127,7 +138,7 @@ const AboutContainer = () => (
                   <div className="slick-slide" data-slick-index="3" aria-hidden="true" tabIndex="-1" style={{width: '0px'}}>
                     <div>
                       <div className="flexim-slider__imagebox" style={{width: '100%', display: 'inline-block'}}>
-                        <img src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/DSC_53329small.jpg"
+                        <img src={{Spherical007}}
                              alt="dsc_53329small"/>
                       </div>
                     </div>
@@ -136,7 +147,7 @@ const AboutContainer = () => (
                     <div>
                       <div className="flexim-slider__imagebox" style={{width: '100%', display: 'inline-block'}}>
                         <img
-                          src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Brand-Home_Image-1-1-e1539588254127.jpg"
+                          src={{Spherical008}}
                           alt="brand-home_image-1-2"/>
                       </div>
                     </div>
@@ -145,7 +156,7 @@ const AboutContainer = () => (
                     <div>
                       <div className="flexim-slider__imagebox" style={{width: '100%', display: 'inline-block'}}>
                         <img
-                          src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0447-small-e1539588160877.png"
+                          src={{Spherical009}}
                           alt="spherical-urbanica-0447-small"/>
                       </div>
                     </div>
@@ -154,7 +165,7 @@ const AboutContainer = () => (
                     <div>
                       <div className="flexim-slider__imagebox" style={{width: '100%', display: 'inline-block'}}>
                         <img
-                          src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-9642-small.png"
+                          src={{Spherical004}}
                           alt="spherical-urbanica-9642-small"/>
                       </div>
                     </div>
@@ -163,7 +174,7 @@ const AboutContainer = () => (
                     <div>
                       <div className="flexim-slider__imagebox" style={{width: '100%', display: 'inline-block'}}>
                         <img
-                          src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0563-e1539553484790.jpg"
+                          src={{Spherical005}}
                           alt="spherical-urbanica-0563"/>
                       </div>
                     </div>
@@ -172,7 +183,7 @@ const AboutContainer = () => (
                     <div>
                       <div className="flexim-slider__imagebox" style={{width: '100%', display: 'inline-block'}}>
                         <img
-                          src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-0616-e1539588109901.jpg"
+                          src={{Spherical006}}
                           alt="spherical-urbanica-0616"/>
                       </div>
                     </div>
@@ -180,7 +191,7 @@ const AboutContainer = () => (
                   <div className="slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" tabIndex="-1" style={{width: '0px'}}>
                     <div>
                       <div className="flexim-slider__imagebox" style={{width: '100%', display: 'inline-block'}}>
-                        <img src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/DSC_53329small.jpg"
+                        <img src={{Spherical007}}
                              alt="dsc_53329small"/>
                       </div>
                     </div>
@@ -189,7 +200,7 @@ const AboutContainer = () => (
                     <div>
                       <div className="flexim-slider__imagebox" style={{width: '100%', display: 'inline-block'}}>
                         <img
-                          src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Brand-Home_Image-1-1-e1539588254127.jpg"
+                          src={{Spherical008}}
                           alt="brand-home_image-1-2"/>
                       </div>
                     </div>
@@ -198,7 +209,7 @@ const AboutContainer = () => (
                     <div>
                       <div className="flexim-slider__imagebox" style={{width: '100%', display: 'inline-block'}}>
                         <img
-                          src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0447-small-e1539588160877.png"
+                          src={{Spherical009}}
                           alt="spherical-urbanica-0447-small"/>
                       </div>
                     </div>
@@ -225,11 +236,11 @@ const AboutContainer = () => (
               <div className="photo-content__imglist">
                 <div className="photo-content__img">
                   <img className="img-desktop"
-                       src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-9991-e1539117553769.jpg"
+                       src={{Spherical010}}
                        alt="spherical-urbanica-9991"/>
                   <img className="img-mobile"
-                       src="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-9991-e1539117553769.jpg"
-                       alt="https://www.urbanicathehotels.com/wp-content/uploads/2018/08/Spherical-Urbanica-9991-e1539117553769.jpg"/>
+                       src={{Spherical010}}
+                       alt="spherical-urbanica-9991"/>
                 </div>
               </div>
               <div className="photo-content__content-block photo-content__content-block--right">
@@ -260,12 +271,12 @@ const AboutContainer = () => (
 
             <div className="photo-contdo__imglist fadein-slideready fadein-slideup">
               <div className="photo-contdo__imagebox">
-                <img src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0071.jpg"
+                <img src={{Spherical003}}
                      alt="spherical-urbanica-0071-3"/>
               </div>
               <div className="photo-contdo__imagebox">
                 <img
-                  src="https://www.urbanicathehotels.com/wp-content/uploads/2018/10/Spherical-Urbanica-0418-e1539588427506.jpg"
+                  src={{Spherical011}}
                   alt="spherical-urbanica-0418"/>
               </div>
               <div className="photo-contdo__btn">
@@ -279,7 +290,7 @@ const AboutContainer = () => (
               </div>
             </div>
 
-            <div className="photo-contdo__content photo-contdo__content--mobile fadein-slideready">
+            <div className="photo-contdo__content photo-contdo__content--mobile fadein-slideready fadein-slideup">
               <span className="photo-contdo__subtitle">Meaningful Partnerships</span>
               <span className="photo-contdo__title">Lasting Relationships</span>
               <p>The Hotel belongs to the neighborhood. We create a sense of community by inviting our neighbors in to

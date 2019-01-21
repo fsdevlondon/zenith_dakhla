@@ -49,7 +49,7 @@ const PoolBar = () => (
                 </li>
               </ul>
             </div>
-            <div className="content-subnav__nav content-subnav__nav--mobile fadein-slideready">
+            <div className="content-subnav__nav content-subnav__nav--mobile fadein-slideready fadein-slideup">
               <div className="content-subnav__filter-select">
                 <div className="content-subnav__filter-selected">Overview</div>
                 <div className="content-subnav__select">
@@ -795,7 +795,7 @@ const PoolBar = () => (
       </div>
     </div>
     <div className="section">
-      <div className="two-image-slider fadein-slideready">
+      <div className="two-image-slider fadein-slideready fadein-slideup">
         <div className="two-image-slider__innerwrap">
           <div className="two-image-slider-carousel-js owl-carousel owl-loaded owl-drag">
             <div className="owl-stage-outer">
